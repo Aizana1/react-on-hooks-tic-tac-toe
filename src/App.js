@@ -29,7 +29,7 @@ useEffect(() => {
         clearGame();
         alert(`${winner} won the Game !`)
     }
-}, [board])
+}, [board, checkFunc, clearGame])
 
   const checkFunc = () => {
     for (let i = 0; i < Patterns.length; i++) {
